@@ -1,0 +1,8 @@
+server:
+  port: 8001
+eureka:
+  server:
+    enable-self-preservation: false
+
+  client:
+    eureka-server-d-n-s-name:
