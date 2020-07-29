@@ -1,6 +1,6 @@
-package com.york.user.controller;
+package com.york.order.controller;
 
-import com.york.user.dto.UserVO;
+import com.york.order.dto.UserVO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.Enumeration;
+import java.util.HashMap;
 
 /**
  * @author york
@@ -21,13 +23,12 @@ public class UserController {
 
     @GetMapping("getUser")
     public Object getUser(Long userId, HttpServletRequest request) {
-//        Enumeration<String> headers = request.getHeaderNames();
-//        HashMap<String,String> map = new HashMap<>();
-//        while (headers.hasMoreElements()) {
-//            map.put(headers.nextElement(),request.getHeader(headers.nextElement()));
-//        }
-//        logger.info("headers:{}",map);
-        logger.info("收到请求");
+        Enumeration<String> headers = request.getHeaderNames();
+        HashMap<String,String> map = new HashMap<>();
+        while (headers.hasMoreElements()) {
+            map.put(headers.nextElement(),request.getHeader(headers.nextElement()));
+        }
+        logger.info("headers:{}",map);
         UserVO userVO = new UserVO();
         userVO.setUserId(userId);
         userVO.setUserName("xxx" + userId);
