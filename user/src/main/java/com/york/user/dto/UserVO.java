@@ -10,6 +10,16 @@ public class UserVO {
 
     private String userName;
 
+    private Object order;
+
+    public Object getOrder() {
+        return order;
+    }
+
+    public void setOrder(Object order) {
+        this.order = order;
+    }
+
     public Long getUserId() {
         return userId;
     }

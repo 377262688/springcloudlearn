@@ -1,6 +1,12 @@
 spring:
   application:
     name: user
+  cloud:
+    sentinel:
+      enabled: true
+      transport:
+        port: 8080
+        clientIp: 127.0.0.1
 eureka:
   client:
     service-url:

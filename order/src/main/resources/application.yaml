@@ -7,3 +7,7 @@ eureka:
 spring:
   application:
     name: order
+  sleuth:
+    trace-id128: true
+    sampler:
+      probability: 1.0
