@@ -5,8 +5,7 @@ spring:
     sentinel:
       enabled: true
       transport:
-        port: 8080
-        clientIp: 127.0.0.1
+        dashboard: 127.0.0.1:8080
 eureka:
   client:
     service-url:
