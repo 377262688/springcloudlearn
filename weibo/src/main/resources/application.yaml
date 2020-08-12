@@ -2,7 +2,7 @@ spring:
   application:
     name: weibo
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/weibo?characterEncoding=utf-8&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://127.0.0.1:3306/wei_blog?characterEncoding=utf-8&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai
     username: root
     password: yorkroot
   cloud:
